@@ -27,7 +27,7 @@
       "port": 5001
     },
     "firestore": {
-      "port": 7997
+      "port": 7099
     }
   }
 }

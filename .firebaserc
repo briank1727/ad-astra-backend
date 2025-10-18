@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "adastra-453d5"
-  }
+    "default": "adastra-453d5",
+    "adastra": "adastra-453d5"
+  },
+  "targets": {},
+  "etags": {}
 }

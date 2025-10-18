@@ -1,0 +1,23 @@
+{
+  "planets": [
+    {
+      "name": "name of planet",
+      "image": "name of image corresponding to planet",
+      "achievements": [
+        {
+          "name": "name of achievement",
+          "type": "progress, streak, or game",
+          "data": {
+            "startDate": "YYYY-MM-DD",
+            "endDate": "YYYY-MM-DD",
+            "moneyToSave": "progress",
+            "numConsecutiveDays": "streak",
+            "minimumStreakAmount": "streak",
+            "frequency": "streak (daily, weekly, monthly)",
+            "gameToComplete": "game"
+          }
+        }
+      ]
+    }
+  ]
+}

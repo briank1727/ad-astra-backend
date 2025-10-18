@@ -1237,3 +1237,1947 @@ specVersion: v1alpha1
 [debug] [2025-10-18T21:51:45.221Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-delete_user"},"extension":{},"message":"Finishing up request with event=finish"}}
 [debug] [2025-10-18T21:51:45.221Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-delete_user"},"extension":{},"message":"Finishing up request with event=close"}}
 [debug] [2025-10-18T21:51:45.221Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-10-18T21:54:44.056Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:54:45.065Z] Customer code is not Node
+[debug] [2025-10-18T21:54:45.066Z] Validating python source
+[debug] [2025-10-18T21:54:45.066Z] Building python source
+[debug] [2025-10-18T21:54:45.067Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:54:45.072Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:54:45.263Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:54:45.274Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:54:45.274Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:46] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:54:46.367Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:46] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:54:46.389Z] [worker-pool] Shutting down IDLE worker (us-central1-create_user) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-create_user)"}}
+[debug] [2025-10-18T21:54:46.389Z] [worker-us-central1-create_user-c539d5b9-a10b-4728-8fe6-a3d1111ae425]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-c539d5b9-a10b-4728-8fe6-a3d1111ae425]: FINISHING"}}
+[debug] [2025-10-18T21:54:46.389Z] [worker-pool] Shutting down IDLE worker (us-central1-fetch_user_data) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-fetch_user_data)"}}
+[debug] [2025-10-18T21:54:46.389Z] [worker-us-central1-fetch_user_data-43f47ff9-752c-444a-991e-c8fb9eee5d88]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-fetch_user_data"},"extension":{},"message":"[worker-us-central1-fetch_user_data-43f47ff9-752c-444a-991e-c8fb9eee5d88]: FINISHING"}}
+[debug] [2025-10-18T21:54:46.389Z] [worker-pool] Shutting down IDLE worker (us-central1-delete_user) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-delete_user)"}}
+[debug] [2025-10-18T21:54:46.389Z] [worker-us-central1-delete_user-4f95ff62-9247-434b-b239-f39b41d63f51]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-delete_user"},"extension":{},"message":"[worker-us-central1-delete_user-4f95ff62-9247-434b-b239-f39b41d63f51]: FINISHING"}}
+[debug] [2025-10-18T21:54:46.391Z] [worker-us-central1-delete_user-4f95ff62-9247-434b-b239-f39b41d63f51]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-delete_user"},"extension":{},"message":"[worker-us-central1-delete_user-4f95ff62-9247-434b-b239-f39b41d63f51]: exited"}}
+[debug] [2025-10-18T21:54:46.392Z] [worker-us-central1-delete_user-4f95ff62-9247-434b-b239-f39b41d63f51]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-delete_user"},"extension":{},"message":"[worker-us-central1-delete_user-4f95ff62-9247-434b-b239-f39b41d63f51]: FINISHED"}}
+[debug] [2025-10-18T21:54:46.392Z] [worker-us-central1-create_user-c539d5b9-a10b-4728-8fe6-a3d1111ae425]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-c539d5b9-a10b-4728-8fe6-a3d1111ae425]: exited"}}
+[debug] [2025-10-18T21:54:46.392Z] [worker-us-central1-create_user-c539d5b9-a10b-4728-8fe6-a3d1111ae425]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-c539d5b9-a10b-4728-8fe6-a3d1111ae425]: FINISHED"}}
+[debug] [2025-10-18T21:54:46.392Z] [worker-us-central1-fetch_user_data-43f47ff9-752c-444a-991e-c8fb9eee5d88]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-fetch_user_data"},"extension":{},"message":"[worker-us-central1-fetch_user_data-43f47ff9-752c-444a-991e-c8fb9eee5d88]: exited"}}
+[debug] [2025-10-18T21:54:46.392Z] [worker-us-central1-fetch_user_data-43f47ff9-752c-444a-991e-c8fb9eee5d88]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-fetch_user_data"},"extension":{},"message":"[worker-us-central1-fetch_user_data-43f47ff9-752c-444a-991e-c8fb9eee5d88]: FINISHED"}}
+[debug] [2025-10-18T21:54:49.644Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\user_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\user_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:54:50.656Z] Customer code is not Node
+[debug] [2025-10-18T21:54:50.656Z] Validating python source
+[debug] [2025-10-18T21:54:50.657Z] Building python source
+[debug] [2025-10-18T21:54:50.657Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:54:50.661Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:54:50.849Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:54:50.861Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:54:50.861Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[debug] [2025-10-18T21:54:51.685Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\user_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\user_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:52] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:54:52.060Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:52] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:54:52.213Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\user_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\user_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:54:53.220Z] Customer code is not Node
+[debug] [2025-10-18T21:54:53.221Z] Validating python source
+[debug] [2025-10-18T21:54:53.221Z] Building python source
+[debug] [2025-10-18T21:54:53.222Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:54:53.227Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:54:53.385Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:54:53.396Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:54:53.396Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[debug] [2025-10-18T21:54:54.246Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\user_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\user_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:54] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:54:54.434Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:54] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:54:55.251Z] Customer code is not Node
+[debug] [2025-10-18T21:54:55.251Z] Validating python source
+[debug] [2025-10-18T21:54:55.252Z] Building python source
+[debug] [2025-10-18T21:54:55.252Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:54:55.258Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:54:55.423Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:54:55.433Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:54:55.433Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:56] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:54:56.808Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:54:56] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:54:57.840Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\user_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\user_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:54:58.848Z] Customer code is not Node
+[debug] [2025-10-18T21:54:58.848Z] Validating python source
+[debug] [2025-10-18T21:54:58.848Z] Building python source
+[debug] [2025-10-18T21:54:58.849Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:54:58.853Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:54:59.010Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:54:59.024Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:54:59.024Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[debug] [2025-10-18T21:54:59.859Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\user_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\user_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:00] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:00.069Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:00] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:55:00.863Z] Customer code is not Node
+[debug] [2025-10-18T21:55:00.865Z] Validating python source
+[debug] [2025-10-18T21:55:00.865Z] Building python source
+[debug] [2025-10-18T21:55:00.866Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:55:00.870Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:55:01.027Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:55:01.038Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:55:01.039Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[debug] [2025-10-18T21:55:01.616Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\user_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\user_functions.py changed, reloading triggers"}}
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[debug] [2025-10-18T21:55:01.923Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\user_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\user_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:02] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:02.119Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:02] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:55:02.931Z] Customer code is not Node
+[debug] [2025-10-18T21:55:02.932Z] Validating python source
+[debug] [2025-10-18T21:55:02.932Z] Building python source
+[debug] [2025-10-18T21:55:02.933Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:55:02.936Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:55:03.100Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:55:03.111Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:55:03.111Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:04] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:04.112Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:04] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:55:23.556Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\user_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\user_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:55:24.560Z] Customer code is not Node
+[debug] [2025-10-18T21:55:24.560Z] Validating python source
+[debug] [2025-10-18T21:55:24.560Z] Building python source
+[debug] [2025-10-18T21:55:24.561Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:55:24.565Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:55:24.746Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:55:24.756Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:55:24.757Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[debug] [2025-10-18T21:55:25.611Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\user_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\user_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:25] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:25.815Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:25] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:55:26.626Z] Customer code is not Node
+[debug] [2025-10-18T21:55:26.627Z] Validating python source
+[debug] [2025-10-18T21:55:26.628Z] Building python source
+[debug] [2025-10-18T21:55:26.628Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:55:26.632Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:55:26.797Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:55:26.808Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:55:26.808Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:27] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:27.816Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:27] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:55:46.621Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:55:47.626Z] Customer code is not Node
+[debug] [2025-10-18T21:55:47.628Z] Validating python source
+[debug] [2025-10-18T21:55:47.628Z] Building python source
+[debug] [2025-10-18T21:55:47.629Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:55:47.635Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:55:47.877Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:55:47.899Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:55:47.900Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:49] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:49.151Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:49] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:55:55.081Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:55:56.086Z] Customer code is not Node
+[debug] [2025-10-18T21:55:56.087Z] Validating python source
+[debug] [2025-10-18T21:55:56.087Z] Building python source
+[debug] [2025-10-18T21:55:56.087Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:55:56.093Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:55:56.269Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:55:56.281Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:55:56.281Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:57] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:55:57.273Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:55:57] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:56:25.643Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:56:26.657Z] Customer code is not Node
+[debug] [2025-10-18T21:56:26.658Z] Validating python source
+[debug] [2025-10-18T21:56:26.658Z] Building python source
+[debug] [2025-10-18T21:56:26.659Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:56:26.663Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:56:26.843Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:56:26.853Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:56:26.853Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[debug] [2025-10-18T21:56:27.472Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:27] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:56:27.894Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:27] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:56:28.473Z] Customer code is not Node
+[debug] [2025-10-18T21:56:28.474Z] Validating python source
+[debug] [2025-10-18T21:56:28.474Z] Building python source
+[debug] [2025-10-18T21:56:28.475Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:56:28.479Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:56:28.649Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:56:28.660Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:56:28.660Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[debug] [2025-10-18T21:56:29.258Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:29] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:56:29.776Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:29] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:56:30.270Z] Customer code is not Node
+[debug] [2025-10-18T21:56:30.271Z] Validating python source
+[debug] [2025-10-18T21:56:30.271Z] Building python source
+[debug] [2025-10-18T21:56:30.272Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:56:30.275Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:56:30.432Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:56:30.444Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:56:30.444Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:31] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:56:31.449Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:31] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:56:32.452Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:56:33.468Z] Customer code is not Node
+[debug] [2025-10-18T21:56:33.469Z] Validating python source
+[debug] [2025-10-18T21:56:33.470Z] Building python source
+[debug] [2025-10-18T21:56:33.471Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:56:33.476Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:56:33.632Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:56:33.643Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:56:33.644Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:34] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:56:34.685Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:34] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:56:43.424Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:56:44.442Z] Customer code is not Node
+[debug] [2025-10-18T21:56:44.442Z] Validating python source
+[debug] [2025-10-18T21:56:44.442Z] Building python source
+[debug] [2025-10-18T21:56:44.443Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:56:44.446Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:56:44.620Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:56:44.631Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:56:44.631Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:45] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:56:45.612Z] Got response from /__/functions.yaml endpoints:
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:56:45] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:57:22.663Z] [work-queue] {"queuedWork":["/adastra-453d5/us-central1/create_user-2025-10-18T21:57:22.663Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-10-18T21:57:22.664Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/adastra-453d5/us-central1/create_user-2025-10-18T21:57:22.663Z"],"workRunningCount":1}
+[debug] [2025-10-18T21:57:22.664Z] Accepted request POST /adastra-453d5/us-central1/create_user --> us-central1-create_user
+[debug] [2025-10-18T21:57:22.667Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-10-18T21:57:22.668Z] [functions] Got req.url=/adastra-453d5/us-central1/create_user, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/adastra-453d5/us-central1/create_user, mapping to path=/"}}
+[debug] [2025-10-18T21:57:22.668Z] [worker-pool] Cleaned up workers for us-central1-create_user: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-create_user: 1 --> 0"}}
+[debug] [2025-10-18T21:57:22.668Z] [worker-pool] Cleaned up workers for us-central1-fetch_user_data: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-fetch_user_data: 1 --> 0"}}
+[debug] [2025-10-18T21:57:22.668Z] [worker-pool] Cleaned up workers for us-central1-delete_user: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-delete_user: 1 --> 0"}}
+[debug] [2025-10-18T21:57:22.673Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
+[debug] [2025-10-18T21:57:22.685Z] [worker-pool] addWorker(us-central1-create_user) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-create_user)"}}
+[debug] [2025-10-18T21:57:22.685Z] [worker-pool] Adding worker with key us-central1-create_user, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-create_user, total=1"}}
+[info] >   * Serving Flask app 'create_user' {"user":" * Serving Flask app 'create_user'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'create_user'\r"}}
+[info] >   * Debug mode: off {"user":" * Debug mode: off\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: off\r"}}
+[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
+[info] >   * Running on http://127.0.0.1:8506 {"user":" * Running on http://127.0.0.1:8506\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:8506\r"}}
+[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
+[info] >  Error creating user: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'. (line 647) {"user":"Error creating user: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'. (line 647)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m Error creating user: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'. (line 647)\r"}}
+[info] >  127.0.0.1 - - [18/Oct/2025 21:57:23] "GET /__/health HTTP/1.1" 500 - {"user":"127.0.0.1 - - [18/Oct/2025 21:57:23] \"GET /__/health HTTP/1.1\" 500 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [18/Oct/2025 21:57:23] \"GET /__/health HTTP/1.1\" 500 -\r"}}
+[debug] [2025-10-18T21:57:23.780Z] [worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: IDLE"}}
+[debug] [2025-10-18T21:57:23.781Z] [worker-pool] submitRequest(triggerId=us-central1-create_user) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-create_user)"}}
+[info] i  functions: Beginning execution of "us-central1-create_user" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"Beginning execution of \"us-central1-create_user\""}}
+[debug] [2025-10-18T21:57:23.781Z] [worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: BUSY"}}
+[debug] [2025-10-18T21:57:23.795Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/adastra-453d5/trigger_multicast [none]
+[debug] [2025-10-18T21:57:23.795Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/adastra-453d5/trigger_multicast {"eventId":"10ccf1bf-8ba3-42d5-afb8-4a9a570ce83f","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/adastra-453d5","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2025-10-18T21:57:23.794Z","data":{"uid":"o5VKKj7udVqNgG4O7B4pq3w5bJWi","email":"user1@gmail.com","emailVerified":false,"displayName":"User One","metadata":{"creationTime":"2025-10-18T21:57:23.794Z","lastSignInTime":"2025-10-18T21:57:23.794Z"},"customClaims":{},"providerData":[{"rawId":"user1@gmail.com","providerId":"password","displayName":"User One","email":"user1@gmail.com","federatedId":"user1@gmail.com"}]}}
+[debug] [2025-10-18T21:57:23.798Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/adastra-453d5/trigger_multicast 200
+[debug] [2025-10-18T21:57:23.798Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/adastra-453d5/trigger_multicast {"status":"multicast_acknowledged"}
+[info] >  127.0.0.1 - - [18/Oct/2025 21:57:23] "POST / HTTP/1.1" 201 - {"user":"127.0.0.1 - - [18/Oct/2025 21:57:23] \"POST / HTTP/1.1\" 201 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [18/Oct/2025 21:57:23] \"POST / HTTP/1.1\" 201 -\r"}}
+[debug] [2025-10-18T21:57:23.826Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-create_user" in 45.1577ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"Finished \"us-central1-create_user\" in 45.1577ms"}}
+[debug] [2025-10-18T21:57:23.826Z] [worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: IDLE"}}
+[debug] [2025-10-18T21:57:23.826Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-10-18T21:57:23.826Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-10-18T21:57:23.827Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-10-18T21:57:59.732Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\main.py changed, reloading triggers"}}
+[debug] [2025-10-18T21:58:00.734Z] Customer code is not Node
+[debug] [2025-10-18T21:58:00.736Z] Validating python source
+[debug] [2025-10-18T21:58:00.736Z] Building python source
+[debug] [2025-10-18T21:58:00.737Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:58:00.742Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:58:00.921Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:58:00.932Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:58:00.932Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[debug] [2025-10-18T21:58:01.776Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\main.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\main.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 21:58:01] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:58:01.991Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:58:02] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:58:02.013Z] [worker-pool] Shutting down IDLE worker (us-central1-create_user) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-create_user)"}}
+[debug] [2025-10-18T21:58:02.013Z] [worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: FINISHING"}}
+[info] +  functions[us-central1-add_money]: http function initialized (http://127.0.0.1:5001/adastra-453d5/us-central1/add_money). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/adastra-453d5/us-central1/add_money)."}}
+[debug] [2025-10-18T21:58:02.015Z] [worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: exited"}}
+[debug] [2025-10-18T21:58:02.015Z] [worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-create_user"},"extension":{},"message":"[worker-us-central1-create_user-2952a9a6-5607-4331-a52c-12419b773ad6]: FINISHED"}}
+[debug] [2025-10-18T21:58:02.776Z] Customer code is not Node
+[debug] [2025-10-18T21:58:02.777Z] Validating python source
+[debug] [2025-10-18T21:58:02.777Z] Building python source
+[debug] [2025-10-18T21:58:02.777Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T21:58:02.781Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T21:58:02.946Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T21:58:02.957Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T21:58:02.957Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:58:03] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T21:58:03.934Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 21:58:03] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T21:58:12.235Z] [work-queue] {"queuedWork":["/adastra-453d5/us-central1/add_money-2025-10-18T21:58:12.235Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-10-18T21:58:12.235Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/adastra-453d5/us-central1/add_money-2025-10-18T21:58:12.235Z"],"workRunningCount":1}
+[debug] [2025-10-18T21:58:12.235Z] Accepted request GET /adastra-453d5/us-central1/add_money --> us-central1-add_money
+[debug] [2025-10-18T21:58:12.237Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-10-18T21:58:12.238Z] [functions] Got req.url=/adastra-453d5/us-central1/add_money, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/adastra-453d5/us-central1/add_money, mapping to path=/"}}
+[debug] [2025-10-18T21:58:12.238Z] [worker-pool] Cleaned up workers for us-central1-create_user: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-create_user: 1 --> 0"}}
+[debug] [2025-10-18T21:58:12.243Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
+[debug] [2025-10-18T21:58:12.254Z] [worker-pool] addWorker(us-central1-add_money) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-add_money)"}}
+[debug] [2025-10-18T21:58:12.254Z] [worker-pool] Adding worker with key us-central1-add_money, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-add_money, total=1"}}
+[info] >   * Serving Flask app 'add_money' {"user":" * Serving Flask app 'add_money'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'add_money'\r"}}
+[info] >   * Debug mode: off {"user":" * Debug mode: off\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: off\r"}}
+[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
+[info] >   * Running on http://127.0.0.1:8537 {"user":" * Running on http://127.0.0.1:8537\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:8537\r"}}
+[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
+[info] >  Error adding money: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'. (line 647) {"user":"Error adding money: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'. (line 647)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m Error adding money: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'. (line 647)\r"}}
+[info] >  127.0.0.1 - - [18/Oct/2025 21:58:13] "GET /__/health HTTP/1.1" 500 - {"user":"127.0.0.1 - - [18/Oct/2025 21:58:13] \"GET /__/health HTTP/1.1\" 500 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [18/Oct/2025 21:58:13] \"GET /__/health HTTP/1.1\" 500 -\r"}}
+[debug] [2025-10-18T21:58:13.355Z] [worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"[worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: IDLE"}}
+[debug] [2025-10-18T21:58:13.356Z] [worker-pool] submitRequest(triggerId=us-central1-add_money) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-add_money)"}}
+[info] i  functions: Beginning execution of "us-central1-add_money" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"Beginning execution of \"us-central1-add_money\""}}
+[debug] [2025-10-18T21:58:13.356Z] [worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"[worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: BUSY"}}
+[info] >  127.0.0.1 - - [18/Oct/2025 21:58:13] "GET / HTTP/1.1" 200 - {"user":"127.0.0.1 - - [18/Oct/2025 21:58:13] \"GET / HTTP/1.1\" 200 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [18/Oct/2025 21:58:13] \"GET / HTTP/1.1\" 200 -\r"}}
+[debug] [2025-10-18T21:58:13.424Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-add_money" in 68.2126ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"Finished \"us-central1-add_money\" in 68.2126ms"}}
+[debug] [2025-10-18T21:58:13.425Z] [worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"[worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: IDLE"}}
+[debug] [2025-10-18T21:58:13.425Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-10-18T21:58:13.425Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-10-18T21:58:13.425Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-10-18T22:00:15.572Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:00:16.581Z] Customer code is not Node
+[debug] [2025-10-18T22:00:16.581Z] Validating python source
+[debug] [2025-10-18T22:00:16.582Z] Building python source
+[debug] [2025-10-18T22:00:16.582Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:00:16.587Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:00:16.758Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:00:16.768Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:00:16.768Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[debug] [2025-10-18T22:00:17.801Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\bank_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\bank_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:17] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:00:17.804Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:17] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:00:17.832Z] [worker-pool] Shutting down IDLE worker (us-central1-add_money) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-add_money)"}}
+[debug] [2025-10-18T22:00:17.832Z] [worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"[worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: FINISHING"}}
+[debug] [2025-10-18T22:00:17.835Z] [worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"[worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: exited"}}
+[debug] [2025-10-18T22:00:17.835Z] [worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-add_money"},"extension":{},"message":"[worker-us-central1-add_money-d862fc21-2050-492f-b895-c429058b8fb8]: FINISHED"}}
+[debug] [2025-10-18T22:00:17.945Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\bank_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\bank_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:00:18.947Z] Customer code is not Node
+[debug] [2025-10-18T22:00:18.947Z] Validating python source
+[debug] [2025-10-18T22:00:18.947Z] Building python source
+[debug] [2025-10-18T22:00:18.948Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:00:18.953Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:00:19.109Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:00:19.120Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:00:19.120Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[debug] [2025-10-18T22:00:20.099Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\__pycache__\bank_functions.cpython-311.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\__pycache__\\bank_functions.cpython-311.pyc changed, reloading triggers"}}
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:20] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:00:20.102Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:20] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:00:21.100Z] Customer code is not Node
+[debug] [2025-10-18T22:00:21.100Z] Validating python source
+[debug] [2025-10-18T22:00:21.101Z] Building python source
+[debug] [2025-10-18T22:00:21.101Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:00:21.105Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:00:21.258Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:00:21.269Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:00:21.269Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:22] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:00:22.357Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:22] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:00:35.381Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\achievements_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\achievements_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:00:36.384Z] Customer code is not Node
+[debug] [2025-10-18T22:00:36.384Z] Validating python source
+[debug] [2025-10-18T22:00:36.384Z] Building python source
+[debug] [2025-10-18T22:00:36.385Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:00:36.393Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:00:36.607Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:00:36.620Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:00:36.620Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:37] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:00:37.727Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:00:37] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:01:06.665Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\achievements_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\achievements_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:01:07.668Z] Customer code is not Node
+[debug] [2025-10-18T22:01:07.669Z] Validating python source
+[debug] [2025-10-18T22:01:07.669Z] Building python source
+[debug] [2025-10-18T22:01:07.670Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:01:07.675Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:01:07.856Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:01:07.866Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:01:07.867Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:08] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:01:08.902Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:08] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:01:16.512Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\achievements_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\achievements_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:01:17.520Z] Customer code is not Node
+[debug] [2025-10-18T22:01:17.521Z] Validating python source
+[debug] [2025-10-18T22:01:17.521Z] Building python source
+[debug] [2025-10-18T22:01:17.522Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:01:17.526Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:01:17.698Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:01:17.710Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:01:17.710Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:18] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:01:18.770Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:18] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:01:26.813Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\achievements_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\achievements_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:01:27.829Z] Customer code is not Node
+[debug] [2025-10-18T22:01:27.830Z] Validating python source
+[debug] [2025-10-18T22:01:27.830Z] Building python source
+[debug] [2025-10-18T22:01:27.830Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:01:27.834Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:01:28.030Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:01:28.040Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:01:28.041Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:29] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:01:29.016Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:29] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}
+[debug] [2025-10-18T22:01:32.006Z] File C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\achievements_functions.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\achievements_functions.py changed, reloading triggers"}}
+[debug] [2025-10-18T22:01:33.008Z] Customer code is not Node
+[debug] [2025-10-18T22:01:33.008Z] Validating python source
+[debug] [2025-10-18T22:01:33.009Z] Building python source
+[debug] [2025-10-18T22:01:33.009Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-10-18T22:01:33.014Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-10-18T22:01:33.190Z] stdout: C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2025-10-18T22:01:33.202Z] Running admin server with args: ["python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"adastra-453d5","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"adastra-453d5","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","FIRESTORE_EMULATOR_HOST":"127.0.0.1:7997","FIREBASE_FIRESTORE_EMULATOR_ADDRESS":"127.0.0.1:7997","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"adastra-453d5.firebasestorage.app\",\"projectId\":\"adastra-453d5\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions
+[debug] [2025-10-18T22:01:33.202Z] Running command with virtualenv: command="C:\Users\brian\Coding Stuff\Ad Astra\ad-astra-backend\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:34] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-10-18T22:01:34.258Z] Got response from /__/functions.yaml endpoints:
+  add_money:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: add_money
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  create_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: create_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  delete_user:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: delete_user
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  fetch_user_data:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: fetch_user_data
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [18/Oct/2025 22:01:34] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: add_money, create_user, delete_user, fetch_user_data."}}

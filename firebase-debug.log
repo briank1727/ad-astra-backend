@@ -1,0 +1,45 @@
+[debug] [2025-10-19T05:21:56.056Z] ----------------------------------------------------------------------
+[debug] [2025-10-19T05:21:56.067Z] Command:       C:\nvm4w\nodejs\node.exe C:\Users\brian\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-10-19T05:21:56.068Z] CLI Version:   14.20.0
+[debug] [2025-10-19T05:21:56.068Z] Platform:      win32
+[debug] [2025-10-19T05:21:56.068Z] Node Version:  v22.19.0
+[debug] [2025-10-19T05:21:56.068Z] Time:          Sun Oct 19 2025 00:21:56 GMT-0500 (Central Daylight Time)
+[debug] [2025-10-19T05:21:56.068Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-19T05:21:56.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-19T05:21:56.362Z] > authorizing via signed-in user (briank1727@gmail.com)
+[debug] [2025-10-19T05:21:56.538Z] java version "21.0.2" 2024-01-16 LTS
+Java(TM) SE Runtime Environment (build 21.0.2+13-LTS-58)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.2+13-LTS-58, mixed mode, sharing)
+
+[debug] [2025-10-19T05:21:56.556Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, extensions"}}
+[debug] [2025-10-19T05:21:56.559Z] Checked if tokens are valid: true, expires at: 1760854896335
+[debug] [2025-10-19T05:21:56.559Z] Checked if tokens are valid: true, expires at: 1760854896335
+[debug] [2025-10-19T05:21:56.560Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/adastra-453d5 [none]
+[debug] [2025-10-19T05:21:56.763Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/adastra-453d5 200
+[debug] [2025-10-19T05:21:56.763Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/adastra-453d5 {"projectNumber":"327879037631","projectId":"adastra-453d5","lifecycleState":"ACTIVE","name":"AdAstra","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-10-18T19:55:15.566280Z"}
+[debug] [2025-10-19T05:21:56.780Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.780Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.780Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.780Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.780Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":7099}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-10-19T05:21:56.786Z] Emulator locator file path: C:\Users\brian\AppData\Local\Temp\hub-adastra-453d5.json
+[debug] [2025-10-19T05:21:56.786Z] [hub] writing locator at C:\Users\brian\AppData\Local\Temp\hub-adastra-453d5.json
+[debug] [2025-10-19T05:21:56.795Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-10-19T05:21:56.800Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.800Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.800Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-10-19T05:21:56.800Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":7099}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-10-19T05:21:56.821Z] defaultcredentials: writing to file C:\Users\brian\AppData\Roaming\firebase\briank1727_gmail_com_application_default_credentials.json
+[debug] [2025-10-19T05:21:56.824Z] Setting GAC to C:\Users\brian\AppData\Roaming\firebase\briank1727_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\brian\\AppData\\Roaming\\firebase\\briank1727_gmail_com_application_default_credentials.json"}}
+[debug] [2025-10-19T05:21:56.825Z] Checked if tokens are valid: true, expires at: 1760854896335
+[debug] [2025-10-19T05:21:56.826Z] Checked if tokens are valid: true, expires at: 1760854896335
+[debug] [2025-10-19T05:21:56.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/adastra-453d5/adminSdkConfig [none]
+[debug] [2025-10-19T05:21:57.211Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/adastra-453d5/adminSdkConfig 200
+[debug] [2025-10-19T05:21:57.211Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/adastra-453d5/adminSdkConfig {"projectId":"adastra-453d5","storageBucket":"adastra-453d5.firebasestorage.app"}
+[debug] [2025-10-19T05:21:57.233Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-10-19T05:21:57.233Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-10-19T05:21:57.233Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\brian\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",7099,"--websocket_port",9150,"--project_id","adastra-453d5","--rules","C:\\Users\\brian\\Coding Stuff\\Ad Astra\\ad-astra-backend\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":7099} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\brian\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",7099,\"--websocket_port\",9150,\"--project_id\",\"adastra-453d5\",\"--rules\",\"C:\\\\Users\\\\brian\\\\Coding Stuff\\\\Ad Astra\\\\ad-astra-backend\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":7099}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}

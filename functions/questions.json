@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What are you saving for?",
+      "options": [
+        "A vacation or trip",
+        "A car or vehicle-related expense",
+        "A new gadget or tech upgrade",
+        "A long-term goal (house, apartment, etc.)",
+        "An emergency fund or general savings",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 2,
+      "question_text": "Is this a one-time purchase or an ongoing goal?",
+      "options": [
+        "One-time purchase",
+        "Ongoing goal (like an emergency fund or retirement)",
+        "Periodic goal (e.g., yearly tuition, travel, etc.)",
+        "Not sure yet",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 3,
+      "question_text": "How much money do you want to save in total?",
+      "options": [
+        "Less than $500",
+        "$500 - $1,000",
+        "$1,000 - $2,000",
+        "$2,000 - $5,000",
+        "More than $5,000",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 4,
+      "question_text": "When do you want to reach this goal?",
+      "options": [
+        "Within 3 months",
+        "3-6 months",
+        "6-12 months",
+        "1-2 years",
+        "More than 2 years",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 5,
+      "question_text": "Would you like to adjust your spending habits to reach your goal faster?",
+      "options": [
+        "Yes, I'm open to cutting expenses",
+        "Maybe, depending on the suggestions",
+        "No, I prefer to keep my current spending habits",
+        "Not sure yet",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 6,
+      "question_text": "What is your monthly income (approximate)?",
+      "options": [
+        "Less than $1,000",
+        "$1,000 - $2,500",
+        "$2,500 - $4,000",
+        "$4,000 - $6,000",
+        "More than $6,000",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 7,
+      "question_text": "What are your average monthly expenses?",
+      "options": [
+        "Less than $1,000",
+        "$1,000 - $2,000",
+        "$2,000 - $3,000",
+        "$3,000 - $5,000",
+        "More than $5,000",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 8,
+      "question_text": "Do you currently have any existing savings or investments?",
+      "options": [
+        "No, I'm starting from scratch",
+        "Yes, less than $1,000",
+        "$1,000 - $5,000",
+        "$5,000 - $10,000",
+        "More than $10,000",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 9,
+      "question_text": "How do you prefer to save money?",
+      "options": [
+        "Automatically each paycheck",
+        "Manually each week or month",
+        "Whenever I have leftover money",
+        "A mix of automatic and manual saving",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 10,
+      "question_text": "What kind of saver are you?",
+      "options": [
+        "Consistent - I always save regularly",
+        "Flexible - I save when I can",
+        "Occasional - I save when I remember",
+        "Struggling - I find it hard to save",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 11,
+      "question_text": "Are there specific categories you'd like to reduce spending in?",
+      "options": [
+        "Dining out and food delivery",
+        "Entertainment and subscriptions",
+        "Shopping and clothing",
+        "Transportation and gas",
+        "Utilities or miscellaneous expenses",
+        "Other (please specify): ______"
+      ]
+    },
+    {
+      "id": 12,
+      "question_text": "Would you like your savings plan to focus on short-term milestones or long-term consistency?",
+      "options": [
+        "Short-term milestones (weekly or monthly targets)",
+        "Long-term consistency (steady habits over time)",
+        "A balance of both",
+        "Not sure - let AI decide for me",
+        "Other (please specify): ______"
+      ]
+    }
+  ]
+}

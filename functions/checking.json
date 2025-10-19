@@ -1,0 +1,230 @@
+{
+  "planets": [
+    {
+      "name": "Mercury Foundation",
+      "image": "mercury-planet.png",
+      "achievements": [
+        {
+          "name": "Down Payment Liftoff",
+          "description": "Kickstart your journey by saving your first $2,500. Every great accomplishment starts with a single, determined step toward your dream home.",
+          "type": "progress",
+          "data": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-03-31",
+            "moneyToSave": 2500
+          }
+        },
+        {
+          "name": "Impulse Igniter",
+          "description": "Tackle impulse spending head-on. Save at least $10 a day for 3 days in a row by consciously avoiding a non-essential purchase.",
+          "type": "streak",
+          "data": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-01-31",
+            "numConsecutiveDays": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Venus Velocity",
+      "image": "venus-planet.png",
+      "achievements": [
+        {
+          "name": "Foundation Frame",
+          "description": "Build serious momentum by reaching a total of $5,000 saved. You're building the financial framework for your future home.",
+          "type": "progress",
+          "data": {
+            "startDate": "2025-04-01",
+            "endDate": "2025-06-30",
+            "moneyToSave": 5000
+          }
+        },
+        {
+          "name": "Consistent Committer",
+          "description": "Strengthen your saving habit by putting aside at least $12 every day for 5 consecutive days. Consistency is key!",
+          "type": "streak",
+          "data": {
+            "startDate": "2025-04-01",
+            "endDate": "2025-04-30",
+            "numConsecutiveDays": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Earth Equity",
+      "image": "earth-planet.png",
+      "achievements": [
+        {
+          "name": "Homestead Basecamp",
+          "description": "Establish a solid financial base by growing your down payment fund to $7,500. You're well on your way!",
+          "type": "progress",
+          "data": {
+            "startDate": "2025-07-01",
+            "endDate": "2025-09-30",
+            "moneyToSave": 7500
+          }
+        },
+        {
+          "name": "Auto-Save Architect",
+          "description": "Play this interactive game to learn how to set up and optimize automated savings transfers, making your goals easier to reach.",
+          "type": "game",
+          "data": { "startDate": "2025-07-01", "endDate": "2025-07-31" }
+        },
+        {
+          "name": "Weekly Win",
+          "description": "Prove your discipline by completing a full 7-day streak of saving at least $15 each day. This builds powerful habits.",
+          "type": "streak",
+          "data": {
+            "startDate": "2025-07-01",
+            "endDate": "2025-07-31",
+            "numConsecutiveDays": 7
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mars Momentum",
+      "image": "mars-planet.png",
+      "achievements": [
+        {
+          "name": "The $10k Threshold",
+          "description": "Cross the significant milestone of $10,000! This major achievement shows your dedication is paying off big time.",
+          "type": "progress",
+          "data": {
+            "startDate": "2025-10-01",
+            "endDate": "2025-12-31",
+            "moneyToSave": 10000
+          }
+        },
+        {
+          "name": "Fortnight Fortress",
+          "description": "Build a fortress of financial discipline. Maintain a 14-day streak of saving at least $18 daily.",
+          "type": "streak",
+          "data": {
+            "startDate": "2025-10-01",
+            "endDate": "2025-10-31",
+            "numConsecutiveDays": 14
+          }
+        }
+      ]
+    },
+    {
+      "name": "Jupiter Growth",
+      "image": "jupiter-planet.png",
+      "achievements": [
+        {
+          "name": "Halfway Home",
+          "description": "You've reached $13,500, putting you over halfway to your down payment goal. The finish line is getting closer!",
+          "type": "progress",
+          "data": {
+            "startDate": "2026-01-01",
+            "endDate": "2026-03-31",
+            "moneyToSave": 13500
+          }
+        },
+        {
+          "name": "Safe Harbor Investor",
+          "description": "Explore low-risk investment options like HYSAs and CDs in this educational game, aligning with your preference for safe returns.",
+          "type": "game",
+          "data": { "startDate": "2026-01-01", "endDate": "2026-02-28" }
+        },
+        {
+          "name": "Three-Week Triumph",
+          "description": "Lock in your habits with an impressive 21-day streak of saving at least $20 every day.",
+          "type": "streak",
+          "data": {
+            "startDate": "2026-01-01",
+            "endDate": "2026-02-15",
+            "numConsecutiveDays": 21
+          }
+        }
+      ]
+    },
+    {
+      "name": "Saturn Stability",
+      "image": "saturn-planet.png",
+      "achievements": [
+        {
+          "name": "Structure Secured",
+          "description": "Grow your savings to an incredible $17,000. Your financial structure is strong enough to support your dream of homeownership.",
+          "type": "progress",
+          "data": {
+            "startDate": "2026-04-01",
+            "endDate": "2026-06-30",
+            "moneyToSave": 17000
+          }
+        },
+        {
+          "name": "Monthly Master",
+          "description": "Achieve mastery over impulse spending by completing a full 30-day streak of saving at least $25 daily.",
+          "type": "streak",
+          "data": {
+            "startDate": "2026-04-01",
+            "endDate": "2026-05-15",
+            "numConsecutiveDays": 30
+          }
+        }
+      ]
+    },
+    {
+      "name": "Uranus Horizon",
+      "image": "uranus-planet.png",
+      "achievements": [
+        {
+          "name": "Pre-Approval Power",
+          "description": "Hit $21,000 saved! This is a powerful amount that puts you in a great position when seeking mortgage pre-approval.",
+          "type": "progress",
+          "data": {
+            "startDate": "2026-07-01",
+            "endDate": "2026-09-30",
+            "moneyToSave": 21000
+          }
+        },
+        {
+          "name": "Mortgage Maze",
+          "description": "Navigate the complexities of home loans in this quiz game. Learn key terms to become a savvy homebuyer.",
+          "type": "game",
+          "data": { "startDate": "2026-07-01", "endDate": "2026-08-31" }
+        },
+        {
+          "name": "Elite Endurance",
+          "description": "Demonstrate elite financial endurance by maintaining a 45-day savings streak of putting away $28 daily.",
+          "type": "streak",
+          "data": {
+            "startDate": "2026-07-01",
+            "endDate": "2026-08-31",
+            "numConsecutiveDays": 45
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neptune Mastery",
+      "image": "neptune-planet.png",
+      "achievements": [
+        {
+          "name": "Keys in Hand",
+          "description": "You did it! Reach your ultimate goal of $25,000 saved for your home down payment. The keys to your future are in your hands.",
+          "type": "progress",
+          "data": {
+            "startDate": "2026-10-01",
+            "endDate": "2026-12-31",
+            "moneyToSave": 25000
+          }
+        },
+        {
+          "name": "Homeowner's Discipline",
+          "description": "Complete a legendary 60-day streak saving $30 daily, proving you have the financial discipline required for successful homeownership.",
+          "type": "streak",
+          "data": {
+            "startDate": "2026-10-01",
+            "endDate": "2026-12-20",
+            "numConsecutiveDays": 60
+          }
+        }
+      ]
+    }
+  ]
+}

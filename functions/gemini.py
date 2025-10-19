@@ -1,9 +1,8 @@
-import google.generativeai as genai
+from google import generativeai as genai
 import os
 from dotenv import load_dotenv
 from typing import List, Dict, Any
 import json
-from google.genai import types
 
 
 load_dotenv()
@@ -87,6 +86,7 @@ response_schema = {
     },
     "required": ["planets"],
 }
+
 
 response_sample = {
     "planets": [
@@ -416,10 +416,12 @@ Generate planets and achievements that are:
 Respond with a valid JSON object matching this structure:
 {json.dumps(response_schema, indent=2)}"""
 
+    # client = genai.Client(api_key=GEMINI_API_KEY)
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel(
-        "gemini-2.5-pro", system_instruction=system_instruction
+        model_name="gemini-2.5-pro", system_instruction=system_instruction
     )
+
     response = model.generate_content(
         user_prompt,
         generation_config=genai.types.GenerationConfig(

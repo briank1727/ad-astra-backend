@@ -9,27 +9,30 @@ import google.cloud.firestore
 from gemini import generate_gamified_structure
 
 app = initialize_app()
+ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:5178"]
 
 
-# CORS helper function
-def cors_response(body, status=200):
+def cors_response(body, status=200, origin="*"):
     """Create an HTTP response with CORS headers"""
-    headers = {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
-        "Access-Control-Max-Age": "3600",
-    }
-    if body:
-        headers["Content-Type"] = "application/json"
-    return https_fn.Response(body, status=status, headers=headers)
-    # return https_fn.Response(body, status=status)
+    response = https_fn.Response(body, status=status)
+    response.headers["Access-Control-Allow-Origin"] = "http://localhost:5173"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = (
+        "Content-Type, Authorization, X-Requested-With"
+    )
+    response.headers["Access-Control-Max-Age"] = "86400"
+    response.headers["Content-Type"] = "application/json"
+    return response
 
 
 def handle_cors(req):
     """Handle CORS preflight requests"""
+    origin = req.headers.get("Origin")
+    if origin not in ALLOWED_ORIGINS:
+        origin = ALLOWED_ORIGINS[0]  # Default or deny
+
     if req.method == "OPTIONS":
-        return cors_response("")
+        return cors_response("", origin=origin)
     return None
 
 
@@ -312,13 +315,9 @@ def fetch_questions(req: https_fn.Request):
         return cors_resp
 
     try:
-        db: google.cloud.firestore.Client = firestore.client()
-        questions_ref = db.collection("questions")
-        questions = []
-        for doc in questions_ref.stream():
-            question_data = doc.to_dict()
-            question_data["id"] = doc.id  # Include document ID
-            questions.append(question_data)
+        with open("questions.json", "r") as f:
+            questions_data = json.load(f)
+        questions = questions_data.get("questions", [])
 
         return cors_response(
             json.dumps({"questions": questions}),
@@ -476,20 +475,20 @@ def valid_achievements(achievements):
                         "Invalid: streak achievement missing 'numConsecutiveDays' or it is not an int"
                     )
                     return False
-                if "minimumStreakAmount" not in achievement["data"] or not isinstance(
-                    achievement["data"]["minimumStreakAmount"], int
-                ):
-                    print(
-                        "Invalid: streak achievement missing 'minimumStreakAmount' or it is not an int"
-                    )
-                    return False
-                if "frequency" not in achievement["data"] or achievement["data"][
-                    "frequency"
-                ] not in ["daily", "weekly", "monthly"]:
-                    print(
-                        "Invalid: streak achievement missing 'frequency' or it is not valid"
-                    )
-                    return False
+                # if "minimumStreakAmount" not in achievement["data"] or not isinstance(
+                #     achievement["data"]["minimumStreakAmount"], int
+                # ):
+                #     print(
+                #         "Invalid: streak achievement missing 'minimumStreakAmount' or it is not an int"
+                #     )
+                #     return False
+                # if "frequency" not in achievement["data"] or achievement["data"][
+                #     "frequency"
+                # ] not in ["daily", "weekly", "monthly"]:
+                #     print(
+                #         "Invalid: streak achievement missing 'frequency' or it is not valid"
+                #     )
+                #     return False
             elif achievement["type"] == "game":
                 if (
                     "startDate" not in achievement["data"]
@@ -534,21 +533,6 @@ def generate_ai_achievements(req: https_fn.Request):
             return cors_response(
                 json.dumps({"error": "Invalid questions format"}), status=400
             )
-
-        try:
-            time.sleep(10)
-            raise Exception("Random")
-            # result = generate_gamified_structure(questions_answers)
-            # data = result
-            # if not valid_achievements(data):
-            # raise ValueError("Generated achievements structure is invalid")
-        except Exception as e:
-            print(f"Error generating gamified structure: {str(e)}")
-            print(f"Traceback: {traceback.format_exc()}")
-            # Fallback to default response if Gemini fails
-            with open("default_response.json", "r") as f:
-                data = json.load(f)
-
         db: google.cloud.firestore.Client = firestore.client()
         user_ref = db.collection("users").document(uid)
         user_doc = user_ref.get()
@@ -558,7 +542,24 @@ def generate_ai_achievements(req: https_fn.Request):
                 json.dumps({"error": "User not found"}),
                 status=404,
             )
+        try:
+            result = generate_gamified_structure(questions_answers)
+            data = result
+            if not valid_achievements(data):
+                raise ValueError("Generated achievements structure is invalid")
+        except Exception as e:
+            print(f"Error generating gamified structure: {str(e)}")
+            print(f"Traceback: {traceback.format_exc()}")
+            # Fallback to default response if Gemini fails
+            with open("default_response.json", "r") as f:
+                data = json.load(f)
 
+        achievement_id_counter = 0
+        for planet in data.get("planets", []):
+            for achievement in planet.get("achievements", []):
+                achievement["completed"] = False
+                achievement["id"] = achievement_id_counter
+                achievement_id_counter += 1
         user_ref.update({"achievements": data})
 
         return cors_response(
@@ -632,6 +633,7 @@ def store_game_data(req: https_fn.Request):
             return cors_response(
                 json.dumps({"error": "gameData must be a dictionary"}), status=400
             )
+
         db: google.cloud.firestore.Client = firestore.client()
         user_ref = db.collection("users").document(uid)
         user_doc = user_ref.get()
